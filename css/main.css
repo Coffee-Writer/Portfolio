@@ -38,6 +38,11 @@ h3 {
     color: rgb(250, 50, 50);
 }
 
+strong {
+    font-weight: 900;
+    color: rgb(250, 50, 50);
+}
+
 
 /* Toggle Styles */
 
