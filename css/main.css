@@ -43,7 +43,6 @@ strong {
     color: rgb(250, 50, 50);
 }
 
-
 /* Toggle Styles */
 
 #wrapper {
@@ -146,12 +145,18 @@ strong {
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	}
 
-/* Technology images */
+/* Images */
 
 .tech img {
     max-height: 125px;
     max-width: 200px;
     margin: 10px;
+}
+
+.thumbnail img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
 }
 
 /* misc styles */
