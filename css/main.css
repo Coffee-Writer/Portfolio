@@ -1,0 +1,175 @@
+/* Main Styles */
+
+body {
+    padding-top: 50px;
+    background-color: rgb(240, 240, 240);
+}
+
+p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+hr {
+    border-color: rgb(200, 200, 200);
+}
+
+ul {
+    list-style: none;
+}
+
+ol {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+ol li {
+    color: rgb(250, 50, 50);
+}
+
+h2 {
+    font-weight: bold;
+    color: rgb(250, 50, 50);
+    margin-top: 100px;
+}
+
+h3 {
+    font-weight: bold;
+    color: rgb(250, 50, 50);
+}
+
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    
+}
+
+#wrapper.toggled {
+    padding-left: 200px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 200px;
+    width: 0;
+    height: 100%;
+    margin-left: -200px;
+    overflow-y: auto;
+    background: #000;
+    
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 200px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -200px;
+}
+
+/* Sidebar Styles */
+
+#sidebar-wrapper {
+    padding-top: 30px;
+}
+
+#sidebar-wrapper ul {
+    padding-left: 0px;
+}
+
+#sidebar-wrapper li {
+    font-size: 12px;
+    line-height: 30px;
+    display: block;
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 200px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 200px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+/* Circle picture in sidebar */
+
+.circular {
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background-image: url(../imgs/Portfolio_pic.jpg);
+    background-size: 175px 175px;
+    background-repeat: no-repeat;
+    float: none;
+    margin: 0 auto;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	}
+
+/* Technology images */
+
+.tech img {
+    max-height: 125px;
+    max-width: 200px;
+    margin: 10px;
+}
+
+/* misc styles */
+
+#greeting {
+    display: block;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 75px;
+    font-weight: normal;
+    color: rgb(240, 90, 110);
+}
+
+#joke {
+    font-size: 10px;
+}
+
+#job-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contactInfo {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 0;
+}
